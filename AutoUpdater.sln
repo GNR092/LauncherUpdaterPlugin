@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.23107.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutoUpdater", "DiffUpdater\AutoUpdater.csproj", "{07C57F50-7CB1-446A-98FE-96F2FC40AA3F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutoUpdater", "AutoUpdater\AutoUpdater.csproj", "{07C57F50-7CB1-446A-98FE-96F2FC40AA3F}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Launcher", "..\Launcher_Admin\Launcher\Launcher.csproj", "{B5BE9F04-42E5-4651-B9EA-6CB4FF210F61}"
 EndProject
