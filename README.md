@@ -1,2 +1,2 @@
 # LauncherUpdaterPlugin
-Plugin Autoupdater simple usa compatible con protocolos http y ftp
+Plugin Autoupdater simple compatible con los protocolos http y ftp
