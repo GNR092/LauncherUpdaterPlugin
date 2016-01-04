@@ -2,14 +2,13 @@
 using System;
 using System.ComponentModel;
 using System.Diagnostics;
-using System.Drawing;
 using System.IO;
 using System.Net;
 using System.Security.Cryptography;
 using System.Text;
 using System.Windows.Forms;
 
-namespace DiffUpdater
+namespace AutoUpdater
 {
     public partial class UpdateProgress : Form
     {
@@ -36,7 +35,7 @@ namespace DiffUpdater
             calcUpdateNumbers();
             if (localVer == latestVer)
                 return;
-            this.richTextBox1.Text = UpdateProgress.readComments();
+            this.richTextBox1.Text = readComments();
             this.DownloadFile(string.Concat(new object[4]
             {
                 url,"/Update",calcUpdateNumbers(),".gz"
@@ -69,13 +68,13 @@ namespace DiffUpdater
         public static string Decrypt(string encryptedText)
         {
             byte[] buffer = Convert.FromBase64String(encryptedText);
-            byte[] bytes = new Rfc2898DeriveBytes(UpdateProgress.PasswordHash, Encoding.ASCII.GetBytes(UpdateProgress.SaltKey)).GetBytes(32);
+            byte[] bytes = new Rfc2898DeriveBytes(PasswordHash, Encoding.ASCII.GetBytes(SaltKey)).GetBytes(32);
             RijndaelManaged rijndaelManaged = new RijndaelManaged();
             rijndaelManaged.Mode = CipherMode.CBC;
             rijndaelManaged.Padding = PaddingMode.None;
-            ICryptoTransform decryptor = rijndaelManaged.CreateDecryptor(bytes, Encoding.ASCII.GetBytes(UpdateProgress.VIKey));
+            ICryptoTransform decryptor = rijndaelManaged.CreateDecryptor(bytes, Encoding.ASCII.GetBytes(VIKey));
             MemoryStream memoryStream = new MemoryStream(buffer);
-            CryptoStream cryptoStream = new CryptoStream((Stream)memoryStream, decryptor, CryptoStreamMode.Read);
+            CryptoStream cryptoStream = new CryptoStream(memoryStream, decryptor, CryptoStreamMode.Read);
             byte[] numArray = new byte[buffer.Length];
             int count = cryptoStream.Read(numArray, 0, numArray.Length);
             memoryStream.Close();
@@ -85,8 +84,8 @@ namespace DiffUpdater
 
         private static string GetChecksum(string fullfile)
         {
-            using (FileStream fileStream = System.IO.File.OpenRead(fullfile))
-                return BitConverter.ToString(new MD5CryptoServiceProvider().ComputeHash((Stream)fileStream)).Replace("-", string.Empty);
+            using (FileStream fileStream = File.OpenRead(fullfile))
+                return BitConverter.ToString(new MD5CryptoServiceProvider().ComputeHash(fileStream)).Replace("-", string.Empty);
         }
 
         private void deCompress()

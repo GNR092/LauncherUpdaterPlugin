@@ -1,4 +1,4 @@
-﻿namespace DiffUpdater
+﻿namespace AutoUpdater
 {
     partial class UpdateProgress
     {

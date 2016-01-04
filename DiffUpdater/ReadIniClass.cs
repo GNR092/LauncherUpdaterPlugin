@@ -2,7 +2,7 @@
 using System.Net;
 
 
-namespace DiffUpdater
+namespace AutoUpdater
 {
     public class ReadIniClass
     {
@@ -15,7 +15,7 @@ namespace DiffUpdater
         {
             return new StreamReader(new WebClient()
             {
-                Credentials = ((ICredentials)new NetworkCredential(ftpuser, ftppw))
+                Credentials = (new NetworkCredential(ftpuser, ftppw))
             }.OpenRead(iniFtpPath)).ReadToEnd();
         }
     }
