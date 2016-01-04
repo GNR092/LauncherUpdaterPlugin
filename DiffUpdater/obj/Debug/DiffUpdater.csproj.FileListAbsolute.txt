@@ -1,0 +1,11 @@
+F:\MegaGNR\Updater\DiffUpdater\DiffUpdater\bin\Debug\DiffUpdater.dll
+F:\MegaGNR\Updater\DiffUpdater\DiffUpdater\bin\Debug\DiffUpdater.pdb
+F:\MegaGNR\Updater\DiffUpdater\DiffUpdater\bin\Debug\CustomPbar.dll
+F:\MegaGNR\Updater\DiffUpdater\DiffUpdater\bin\Debug\Ionic.Zip.dll
+F:\MegaGNR\Updater\DiffUpdater\DiffUpdater\bin\Debug\CustomPbar.pdb
+F:\MegaGNR\Updater\DiffUpdater\DiffUpdater\obj\Debug\DiffUpdater.csprojResolveAssemblyReference.cache
+F:\MegaGNR\Updater\DiffUpdater\DiffUpdater\obj\Debug\DiffUpdater.UpdateProgress.resources
+F:\MegaGNR\Updater\DiffUpdater\DiffUpdater\obj\Debug\DiffUpdater.csproj.GenerateResource.Cache
+F:\MegaGNR\Updater\DiffUpdater\DiffUpdater\obj\Debug\DiffUpdater.dll
+F:\MegaGNR\Updater\DiffUpdater\DiffUpdater\obj\Debug\DiffUpdater.pdb
+F:\MegaGNR\Updater\DiffUpdater\DiffUpdater\obj\Debug\DiffUpdater.Properties.Resources.resources

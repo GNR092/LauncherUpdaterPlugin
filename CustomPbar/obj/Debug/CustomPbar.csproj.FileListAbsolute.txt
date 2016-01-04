@@ -1,0 +1,8 @@
+F:\MegaGNR\Updater\DiffUpdater\CustomPbar\bin\Debug\CustomPbar.dll
+F:\MegaGNR\Updater\DiffUpdater\CustomPbar\bin\Debug\CustomPbar.pdb
+F:\MegaGNR\Updater\DiffUpdater\CustomPbar\obj\Debug\CustomPbar.csprojResolveAssemblyReference.cache
+F:\MegaGNR\Updater\DiffUpdater\CustomPbar\obj\Debug\CustomPbar.Pbar.resources
+F:\MegaGNR\Updater\DiffUpdater\CustomPbar\obj\Debug\CustomPbar.Properties.Resources.resources
+F:\MegaGNR\Updater\DiffUpdater\CustomPbar\obj\Debug\CustomPbar.csproj.GenerateResource.Cache
+F:\MegaGNR\Updater\DiffUpdater\CustomPbar\obj\Debug\CustomPbar.dll
+F:\MegaGNR\Updater\DiffUpdater\CustomPbar\obj\Debug\CustomPbar.pdb
