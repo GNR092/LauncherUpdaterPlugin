@@ -1,4 +1,4 @@
-8,
+11,
 Cheat Engine,
 Engine,
 Cheat,
@@ -6,4 +6,7 @@ CheatEngine,
 Nopde,
 Jakes,
 Hack,
-Hax
+Hax,
+Poke,
+ArtMoney,
+ollydbg
